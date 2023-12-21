@@ -19,6 +19,8 @@
 #define __NR_copy_file_range 377
 #elif __arm64__
 #define __NR_copy_file_range 285
+#elif __loongarch__
+#define __NR_copy_file_range 285
 #endif
 #endif /* __NR_copy_file_range */
 
@@ -28,6 +30,8 @@
 #elif __i386__
 #define __NR_getrandom 355
 #elif __arm64__
+#define __NR_getrandom 278
+#elif __loongarch__
 #define __NR_getrandom 278
 #endif
 #endif /* __NR_getrandom */
@@ -39,6 +43,8 @@
 #define __NR_memfd_create 356
 #elif __arm64__
 #define __NR_memfd_create 279
+#elif __loongarch__
+#define __NR_memfd_create 279
 #endif
 #endif /* __NR_memfd_create */
 
@@ -49,6 +55,8 @@
 #define __NR_renameat2 353
 #elif __arm64__
 #define __NR_renameat2 276
+#elif __loongarch__
+#define __NR_renameat2 276
 #endif
 #endif /* __NR_renameat2 */
 
@@ -58,6 +66,8 @@
 #elif __i386__
 #define __NR_statx 383
 #elif __arm64__
+#define __NR_statx 291
+#elif __loongarch__
 #define __NR_statx 291
 #endif
 #endif /* __NR_statx */

@@ -76,6 +76,9 @@
 #    define AUDIT_ARCH_SPARC
 #    define MINIJAIL_ARCH_NAME "sparc"
 #  endif
+#elif defined(__loongarch__) && (__loongarch_grlen == 64)
+#  define MINIJAIL_ARCH_NR AUDIT_ARCH_LOONGARCH64
+#  define MINIJAIL_ARCH_NAME "loongarch64"
 #else
 #  error "AUDIT_ARCH value unavailable"
 #endif
