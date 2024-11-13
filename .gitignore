@@ -45,3 +45,6 @@ minijail.code-workspace
 # IntelliJ projects.
 .idea
 
+# Failed patches
+*.orig
+*.rej

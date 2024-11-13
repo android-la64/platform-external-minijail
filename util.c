@@ -64,7 +64,7 @@ const char *const log_syscalls[] = {
       defined(__powerpc__) || \
       defined(__sparc__)
   "socket", "connect", "send",
-#elif defined(__riscv)
+#elif defined(__riscv) || defined(__loongarch__)
 # if defined(__ANDROID__)
   "connect", "fcntl", "sendto", "socket", "writev",
 # else
